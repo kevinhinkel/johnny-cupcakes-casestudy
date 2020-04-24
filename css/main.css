@@ -1,0 +1,28 @@
+:root{
+    --font-sans-serif: 'Open Sans', sans-serif;  
+    --font-condensed: 'Anton', sans-serif;
+    --font-script: 'Pacifico', cursive;
+    --teal: #75e0b8;
+    --black: #000;
+    --white: #fff;
+    --light-gray: #eeeeee;
+    --mid-gray: #bbbbbb;
+    --dark-gray: #918e8f;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+    font-family: var(--font-sans-serif);
+    
+}
+font-family: 'Anton', sans-serif;
+    font-family: 'Pacifico', cursive;
