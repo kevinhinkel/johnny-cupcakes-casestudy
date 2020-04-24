@@ -4,27 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Components | Johnny Cupcakes</title>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Pacifico&display=swap"
+    <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans:600|Pacifico&display=swap" rel="stylesheet">
+
+
         rel="stylesheet"></link>
     <link rel="stylesheet" href="../css/main.css"/>
 
 </head>
 <body>
-    <h1>Web Components Go Here</h1>
+    <div class="desc">
+    <h1 class="component_title">Web Components Go Here</h1>
 
-    <h2>Typography Defaults</h2>
-    
-    <article>
+    <h2 class="component_title">Typography Defaults</h2>
+    <div>
+
+    <article class="component">
         <h3 class="component_title">body</h3>
-        <img src="img/feature-paragraph-default-body-typeface.png" alt="body copy">
-
+        <div class="component__img">
+            <img 
+            srcset="img/feature-paragraph-default-body-typeface.png 1.1x" src="img/feature-paragraph-default-body-typeface.png" alt="body copy" />
+        </div>
 
         <div class="component__code">
             <p>Learn about Johnny's journey from the trunk of his car, to growing the Johnny Cupcakes t-shirt brand.</p>
-
         </div>
     </article>
 
+    <article class="component">
+        <h3 class="component_title">headings (h1, h2, h3, h4, h5)</h3>
+        <div class="component__img">
+            <img srcset="img/banner__primaryheadline.png 1.1x" src="img/banner__primaryheadline.png" alt="h1" />
+            <img srcset="img/feature__secondaryheading.png 1.1x" src="img/feature__secondaryheading.png" alt="h2" />
+            <img srcset="img/facts__secondaryheadline.png 1.1x" src="img/facts__secondaryheadline.png" alt="h3" />
+            <img srcset="img/badges__secondaryheadline.png 1.1x" src="img/badges__secondaryheadline.png" alt="h4" />
+            <img srcset="img/feature__subheading.png 1.1x" src="img/feature__subheading.png" alt="h5" />
+        </div>
+            <div class="component__code">
+                <h1>World's First T-Shirt Bakery</h1>
+                <h2>Story</h2>
+                <h3>Fun Facts</h3>
+                <h4>Featured In</h4>
+                <h5>The</h5>
+            </div>
+    </article>
 
 
 </body>
