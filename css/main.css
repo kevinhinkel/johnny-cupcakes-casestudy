@@ -24,11 +24,13 @@ html {
 
 body{
     font-family: var(--font-sans-serif); 
+    width: 80%;
+    margin: 0 40px;
 }
 
 h1,h2,h3,h4,h5{
-    margin: 20px 0;
-
+    line-height: 2;
+    margin: 0;
 }
 
 h1, h2{
@@ -36,35 +38,31 @@ h1, h2{
     text-transform: uppercase;
     letter-spacing: .1rem;
     font-size: 4.5rem;
-    line-height: 2rem;
+    line-height: 3rem;
     font-weight: lighter;
 }
 
+h1 {
+    line-height: 1em; }
 h2 {
     font-size: 2.5rem;
     color: #fff;
     background-color: var(--black);
-    padding: 10px 0;
-}
-
+    padding: 10px 0; }
 h3{
-    font-family: var(--font-script);
     font-size: 2rem;
     color: #fff;
-    background-color: var(--teal);
-}
-
+    font-family: var(--font-script);
+    background-color: var(--teal);}
 h4{
     font-family: var(--font-condensed) ;
     text-transform: uppercase;
-    letter-spacing: .2em;
-}
-
+    letter-spacing: .2em;}
 h5{
-    font-family: var(--font-script);
-    color: #fff;
-    background-color: var(--black);
     font-size: 17px;
+    color: #fff;
+    font-family: var(--font-script);
+    background-color: var(--black);
 }
 
 img{
@@ -72,24 +70,93 @@ img{
     max-width: 100%;
 }
 
-/* Component */
-.component img{
-    max-width: initial;
-    padding: 0 0 5px;
-}
-.component__img{
-    border: 1px solid #ccc;
-    overflow-x: auto;
-}
-.component__code{
-    border: 1px solid #ccc;
+/**
+* Component */
+.component{
+    margin-bottom: 50px;
 }
 
-.component_title {
+.component-page__title{
     font-family: var(--font-sans-serif);
     font-size: 1rem;
     background-color: #fff;
-    color: #c700b6;
+    color: #000;
     line-height: 1;
-
+    font-size: 30px;
 }
+
+.component__heading{
+    font-family: var(--font-sans-serif);
+    font-size: 1rem;
+    background-color: #000;
+    color: #fff;
+    line-height: 1;
+    font-size: 20px;
+    padding: 0.45rem;
+    margin: 0;
+    position: sticky;
+    margin-bottom: 0;
+      top: 0rem;
+  z-index: 10;
+}
+
+.component__name{
+    font-family: var(--font-sans-serif);
+    font-size: 1rem;
+    background-color: var(--light-gray);
+    color: #666666;
+    line-height: 1;
+    font-size: 20px;
+    padding: 0.45rem;
+    margin: 0;
+}
+
+.component__code {
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0;
+  position: relative;
+}
+
+.component img{
+    max-width: initial;
+}
+
+.component__img {
+  border: 1px solid #ccc;
+  margin: 0;
+  overflow-x: auto;
+  position: relative;
+}
+
+
+
+.component-page .component__name {
+  position: sticky;
+  top: 2rem;
+  z-index: 9;
+}
+
+.component__code:before,
+.component__img:before {
+  content: "CODE";
+  display: block;
+  padding: 0.25rem;
+  line-height: 1;
+  font-family: monospace;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background: var(--light-gray);
+  color: var(--dark-gray);
+}
+
+.component__img:before {
+  content: "IMG";
+}
+
+.component-page {
+  display: block;
+}
+
