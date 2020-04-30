@@ -160,9 +160,9 @@ img{
 * Atoms */
 
 /**
-* Button call to action
+* CTA Button 
 */
-.button__small button{
+.button__cta button{
     font-family: var(--font-sans-serif);
     font-weight: 700;
     font-size: 14px;
@@ -187,12 +187,82 @@ a:link {
   justify-content: center; */
 }
 
-a:hover button{
+.button__cta:hover button{
     background-color: var(--teal);
     color: var(--white);
     cursor: pointer;
 }
+/**
+* Rewards Button 
+*/
+.button__rewards button{
+    font-family: var(--font-sans-serif);
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    width: 170px;
+    height: 50px;
+    border-radius: 25px;
+    line-height: 2em;
+    color: var(--white);
+    padding: 0px 0;
+    margin: 10px 10px;
+    background-color: var(--teal);
+    border: none;
+  }
+a:link {
+  text-decoration: none;
+  color: var(--teal);
+  cursor: pointer;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.button__rewards:hover button{
+    cursor: pointer;
+}
 
+button i{
+  color: var(--black); 
+  font-size: 20px;
+  padding-right: 3px;
+  line-height: .2;
+  vertical-align: sub;
+}
+
+
+/**
+* Support Button 
+*/
+.button__support button{
+    font-family: var(--font-sans-serif);
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    width: 130px;
+    height: 45px;
+    border-radius: 25px;
+    line-height: 2em;
+    color: var(--black);
+    padding: 0px 0;
+    margin: 10px 10px;
+    background-color: var(--teal);
+    border: none;
+  }
+a:link {
+  text-decoration: none;
+  color: var(--teal);
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.button__support:hover button{
+    cursor: pointer;
+}
 
 /**
 * Ribbon
@@ -258,6 +328,12 @@ a:hover button{
 .icon--square a {
   color: var(--white);
   text-decoration: none;
+}
+
+.icon--square:last-child{
+  color: var(--teal);
+  text-decoration: none;
+  /* font-size: 30px; */
 }
 
 .icon--square:hover,
