@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Components | Johnny Cupcakes</title>
 <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans:300,400,400i,600,700|Pacifico&display=swap" rel="stylesheet">
-
-
+    <link rel="stylesheet" type="text/css" href="../web-fonts-with-css/css/all.min.css" />  
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/main.css"/>
 
 </head>
@@ -16,21 +16,21 @@
     <section class="section" id="typography">
     <h2 class="component__heading">Typography</h2>
     <article class="component">
-        <h3 class="component__name">- body</h3>
+        <h3 class="component__name">.body</h3>
         <div class="component__img">
             <img 
             srcset="img/feature-paragraph-default-body-typeface.png 1.1x" src="img/feature-paragraph-default-body-typeface.png" alt="body copy" />
         </div>
 
         <div class="component__code">
-            <p>Learn about Johnny's journey from the trunk of his car, to growing the Johnny Cupcakes t-shirt brand.</p>
+            <p class="body-copy">Learn about Johnny's journey from the trunk of his car, to growing the Johnny Cupcakes t-shirt brand.</p>
         </div>
     </article>
 
     <article class="component">
-        <h3 class="component__name">- h1, h2, h3, h4, h5</h3>
+        <h3 class="component__name">.h1, h2, h3, h4, h5</h3>
         <div class="component__img">
-            <img srcset="img/banner__primaryheadline.png 1.1x" src="img/banner__primaryheadline.png" alt="h1" />
+            <img srcset="img/banner__primaryheadline.png 1.1x" src="img/banner__primaryheadline.png" alt="World's First T-Shirt Bakery" />
             <img srcset="img/feature__secondaryheading.png 1.1x" src="img/feature__secondaryheading.png" alt="h2" />
             <img srcset="img/facts__secondaryheadline.png 1.1x" src="img/facts__secondaryheadline.png" alt="h3" />
             <img srcset="img/badges__secondaryheadline.png 1.1x" src="img/badges__secondaryheadline.png" alt="h4" />
@@ -38,8 +38,14 @@
         </div>
             <div class="component__code">
                 <h1>World's First T-Shirt Bakery</h1>
-                <h2>Story</h2>
-                <h3>Fun Facts</h3>
+                <h2 class="secondaryheadline-sanserif">
+                    Story</h2>
+                <div class="wrapper">
+                    <h3 class="secondaryheadline-script">
+                        <div class="ribbon">Fun Facts</div>
+                    </h3>
+                </div>
+
                 <h4>Featured In</h4>
                 <h5>The</h5>
             </div> 
@@ -49,7 +55,7 @@
    <section class="section" id="atoms">
     <h2 class="component__heading">Atoms</h2>
     <article class="component">
-        <h3 class="component__name">- button</h3>
+        <h3 class="component__name">.wordmark</h3>
         <div class="component__img">
             <img srcset="img/merchandise__button-cta.png 1.1x" src="img/merchandise__button-cta.png" alt="button cta" />
         </div>
@@ -61,7 +67,30 @@
         </div>
     </article>
 
+        <article class="component">
+        <h3 class="component__name">.icon--square</h3>
+        <div class="component__img">
+            <img srcset="img/page-header__social-list.png 1.1x" src="img/page-header__social-list.png" alt="button cta" />
+        </div>
+        
+        <div class="component__code">
+            <a href="#!" class="icon--square">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#!" class="icon--square">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="#!" class="icon--square">
+                <i class="fab fa-youtube-square"></i>
+            </a>
+            <a href="#!" class="icon--square">
+                <i class="fas fa-envelope-square"></i>
+            </a>
+        </div>
+    </article>
+
 
 
 </body>
+<script src="https://kit.fontawesome.com/3007713ba7.js" crossorigin="anonymous"></script>
 </html>

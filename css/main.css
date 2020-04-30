@@ -44,55 +44,71 @@ h1, h2{
 
 h1 {
     line-height: 1.25em; 
+    text-align: center;
     }
 h2 {
     font-size: 2.5rem;
     color: #fff;
     background-color: var(--black);
-    padding: 10px 0; }
+    padding: 10px 0; 
+    text-align: center;
+    }
 h3{
     font-size: 2rem;
     color: #fff;
     font-family: var(--font-script);
-    background-color: var(--teal);}
+    background-color: var(--teal);
+    text-align: center;
+  }
 h4{
     font-family: var(--font-condensed) ;
     text-transform: uppercase;
-    letter-spacing: .2em;}
+    letter-spacing: .2em;
+    text-align: center;
+}
 h5{
     font-size: 17px;
     color: #fff;
     font-family: var(--font-script);
     background-color: var(--black);
-}
+    text-align: center;
+  }
 
 img{
     display: block;
     max-width: 100%;
 }
 
+.body-copy{
+  font-size: 14px;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 10px;
+  margin: 0;
+}
 /**
-* Component */
+* Components*/
 .component{
     margin-bottom: 50px;
 }
 
 .component-page__title{
     font-family: var(--font-sans-serif);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 5rem;
     background-color: #fff;
     color: #000;
     line-height: 1;
     font-size: 45px;
     margin: 30px 0;
+    text-align: left;
 }
 
 .component__heading{
     font-family: var(--font-sans-serif);
     font-weight: 400;
     font-size: 1rem;
-    background-color: #FF6B73;
+    background-color: rgb(65, 65, 65);
     color: var(--white);
     line-height: 1;
     font-size: 20px;
@@ -103,25 +119,28 @@ img{
     top: 0rem;
     z-index: 10;
     margin-top: 50px;
+    text-align: left;
 }
 
 .component__name{
-    font-family: var(--font-sans-serif);
+    font-family: monospace;
     font-weight: 400;
-    font-style: italic;
-    font-size: 1rem;
+     font-size: 1rem;
     background-color: var(--light-gray);
     color: var(--black);
     line-height: 1;
     font-size: 16px;
     padding: 0.5rem;
     margin: 0;
+    text-align: left;
+
 }
 
 .component__code {
   border: 1px solid #ccc;
   background: #fff;
   margin: 0;
+  padding: 0;
   position: relative;
 }
 
@@ -141,7 +160,7 @@ img{
 * Atoms */
 
 /**
-* call to action button
+* Button call to action
 */
 .button__small button{
     font-family: var(--font-sans-serif);
@@ -155,13 +174,17 @@ img{
     width: 170px;
     height: 37px;
     border-radius: 25px;
-    line-height: 2.2em;
+    line-height: 0em;
     color: var(--teal);
-    padding: 1.5px 0;
+    padding: 18px 0;
+    margin: 10px 10px;
 }
 a:link {
   text-decoration: none;
   color: var(--teal);
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
 }
 
 a:hover button{
@@ -169,6 +192,79 @@ a:hover button{
     color: var(--white);
     cursor: pointer;
 }
+
+
+/**
+* Ribbon
+*/
+
+.wrapper {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.ribbon:before {
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 30px;
+    left: -30px;
+    top: 50%;
+    margin-top: -5px;
+    border-bottom: 2px dotted #000;
+    border-top: 2px dotted #000;
+}
+
+.ribbon:after {
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 30px;
+    right: -30px;
+    top: 50%;
+    margin-top: -5px;
+    border-bottom: 2px dotted #000;
+    border-top: 2px dotted #000;
+}
+
+.ribbon {
+    position: relative;
+    padding: 0px 10px;
+    color: #fff;
+    text-align: center;
+    max-width: 200px;
+    margin: 0 auto;
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+/**
+* .social-list__item
+*/
+.icon--square {
+  background: var(--black);
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s;
+  display: inline-block;
+  padding: 5px 6px;
+}
+.icon--square,
+.icon--square a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.icon--square:hover,
+.icon--square:hover a {
+  color: var(--teal);
+}
+
 /**
 * Section styling */
 
