@@ -183,7 +183,7 @@ img{
     padding: 18px 0;
     margin: 10px 10px;
 }
-a:link {
+a:link .button__cta {
   text-decoration: none;
   color: var(--teal);
   /* display: flex;
@@ -216,7 +216,7 @@ a:link {
     background-color: var(--teal);
     border: none;
   }
-a:link {
+a:link .button__rewards {
   text-decoration: none;
   color: var(--teal);
   cursor: pointer;
@@ -257,7 +257,7 @@ button i{
     background-color: var(--teal);
     border: none;
   }
-a:link {
+a:link .button__support {
   text-decoration: none;
   color: var(--teal);
   /* display: flex;
