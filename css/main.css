@@ -185,7 +185,7 @@ img{
     margin: 10px 10px;
 }
 a:link .button__cta {
-  color: var(--teal);
+  color: var(--teal)!important;
   /* display: flex;
   align-items: center;
   justify-content: center; */
@@ -288,13 +288,13 @@ a:link .button__support {
     background-color: var(--light-gray);
     border: 2px solid #dbdbdb;
   }
-a:link .button__social {
+/* a:link .button__social {
   text-decoration: none;
   color: var(--light-gray);
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center; */
-}
+  justify-content: center;
+} */
 .button__support:hover button{
     cursor: pointer;
 }
