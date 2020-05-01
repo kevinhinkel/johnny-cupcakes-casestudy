@@ -1,15 +1,17 @@
 :root{
     --font-sans-serif: 'Open Sans', sans-serif;  
-    --font-condensed: 'Anton', sans-serif;
+    --font-condensed: 'Barlow Condensed', sans-serif;
     --font-script: 'Pacifico', cursive;
     --teal: #75e0b8;
     --black: #000;
     --white: #fff;
     --light-gray: #eeeeee;
     --mid-gray: #bbbbbb;
-    --dark-gray: #918e8f;
+    --dark-gray: #aeaeae;
 }
-
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
 
 html {
   box-sizing: border-box;
@@ -37,13 +39,14 @@ h1, h2{
     font-family: var(--font-condensed);
     text-transform: uppercase;
     letter-spacing: .1rem;
-    font-size: 4.5rem;
-    line-height: 3rem;
-    font-weight: lighter;
+    font-size: 5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    letter-spacing: .1;
 }
 
 h1 {
-    line-height: 1.25em; 
+    line-height: .9em; 
     text-align: center;
     }
 h2 {
@@ -61,7 +64,8 @@ h3{
     text-align: center;
   }
 h4{
-    font-family: var(--font-condensed) ;
+    font-family: var(--font-condensed);
+    font-weight: lighter;
     text-transform: uppercase;
     letter-spacing: .2em;
     text-align: center;
@@ -162,13 +166,13 @@ img{
 /**
 * CTA Button 
 */
-.button__cta button{
+.button__cta{
     font-family: var(--font-sans-serif);
     font-weight: 700;
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
-    display: block;
+    display: inline-block;
     border: 3px solid var(--teal);
     overflow: hidden;
     width: 170px;
@@ -187,7 +191,7 @@ a:link {
   justify-content: center; */
 }
 
-.button__cta:hover button{
+.button__cta:hover {
     background-color: var(--teal);
     color: var(--white);
     cursor: pointer;
@@ -200,11 +204,11 @@ a:link {
     font-weight: 400;
     font-size: 14px;
     text-align: center;
-    display: block;
+    /* display: block; */
     overflow: hidden;
     width: 170px;
-    height: 50px;
-    border-radius: 25px;
+    height: 54px;
+    border-radius: 30px;
     line-height: 2em;
     color: var(--white);
     padding: 0px 0;
@@ -241,7 +245,7 @@ button i{
     font-weight: 700;
     font-size: 14px;
     text-align: center;
-    display: block;
+    /* display: block; */
     overflow: hidden;
     width: 130px;
     height: 45px;
@@ -263,7 +267,42 @@ a:link {
 .button__support:hover button{
     cursor: pointer;
 }
+/**
+* Social Button 
+*/
+.button__social button{
+    font-family: var(--font-condensed);
+    text-transform: uppercase; 
+    font-weight: 600;
+    font-size: 1.35em;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    width: 190px;
+    height: 60px;
+    border-radius: 50px;
+    line-height: 2em;
+    color: var(--dark-gray);
+    padding: 0px 0;
+    margin: 10px 10px;
+    background-color: var(--light-gray);
+    border: 2px solid #dbdbdb;
+  }
+a:link  {
+  text-decoration: none;
+  color: var(--light-gray);
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.button__support:hover button{
+    cursor: pointer;
+}
 
+.button__social i{
+  color: var(--dark-gray);
+  vertical-align: baseline;
+}
 /**
 * Ribbon
 */
@@ -326,19 +365,19 @@ a:link {
 }
 .icon--square,
 .icon--square a {
-  color: var(--white);
+  color: var(--white)!important;
   text-decoration: none;
 }
 
 .icon--square:last-child{
-  color: var(--teal);
+  color: var(--teal)!important;
   text-decoration: none;
   /* font-size: 30px; */
 }
 
 .icon--square:hover,
 .icon--square:hover a {
-  color: var(--teal);
+  color: var(--teal)!important;
 }
 
 /**
