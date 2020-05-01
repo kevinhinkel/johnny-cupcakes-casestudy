@@ -11,6 +11,7 @@
 }
 a, a:visited, a:hover, a:active {
   color: inherit;
+  text-decoration: none!important;
 }
 
 html {
@@ -184,7 +185,6 @@ img{
     margin: 10px 10px;
 }
 a:link .button__cta {
-  text-decoration: none;
   color: var(--teal);
   /* display: flex;
   align-items: center;
@@ -192,9 +192,9 @@ a:link .button__cta {
 }
 
 .button__cta:hover {
-    background-color: var(--teal);
-    color: var(--white);
-    cursor: pointer;
+  background-color: var(--teal);
+  color: var(--white);
+  cursor: pointer;
 }
 /**
 * Rewards Button 
@@ -288,7 +288,7 @@ a:link .button__support {
     background-color: var(--light-gray);
     border: 2px solid #dbdbdb;
   }
-a:link  {
+a:link .button__social {
   text-decoration: none;
   color: var(--light-gray);
   /* display: flex;
