@@ -87,6 +87,13 @@ img{
     max-width: 100%;
 }
 
+/**
+* Briefcase Size*/
+.fas.fa-briefcase{
+  font-size: 26px;
+  margin-top: -5px;
+}
+
 .body-copy{
   font-size: 14px;
   background-color: var(--black);
@@ -354,32 +361,27 @@ a:link .button__support {
 /**
 * .social-list__item
 */
-.icon--square {
-  background: var(--black);
-  width: 1.75rem;
-  height: 1.75rem;
-  border-radius: 1%;
+.social-icons {
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.25s;
   display: inline-block;
-  padding: 5px 6px;
 }
-.icon--square,
-.icon--square a {
+
+.social-icon, a {
   color: var(--white)!important;
   text-decoration: none;
+  margin: 0 2px;
 }
 
-.icon--square:last-child{
+.social-icons:last-child{
   color: var(--teal)!important;
   text-decoration: none;
-  /* font-size: 30px; */
 }
 
-.icon--square:hover,
-.icon--square:hover a {
+.social-icons:hover,
+.social-icons:hover a {
   color: var(--teal)!important;
 }
 /***************************************************
@@ -427,16 +429,14 @@ a:link .button__support {
 .nav-list a{
   display: inline-block;
   text-decoration: none;
-  padding: .5rem;
+  padding: .25rem;
   font-family: var(--font-condensed);
 }
 
 
 /**
 * Header and Logo */
-.logo-icon a, .logo-text img {
-    display: block;
-}
+
 .site-header__logo a, .site-header__logo img {
     display: block;
 }
@@ -460,8 +460,12 @@ a:link .button__support {
     max-width: 220px;
     display: flex;
 }
+/* 
+.logo-icon a, .logo-text img {
+    display: block;
+} 
 
-
+*/
 /***************************************************
 * Section styling */
 
@@ -494,3 +498,61 @@ a:link .button__support {
   display: block;
 }
 
+/***************************************************
+* Media Queries */
+
+
+/**
+* Hide Nav List */
+@media screen and (max-width: 1160px) {
+  .nav__wrapper {
+    display: none!important;
+  }
+}
+
+
+/**
+* Show Logo */
+
+@media screen and (max-width: 1160px) {
+  .logo-icon-show {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background: #72dfb8 !important;
+  }
+}
+
+
+/**
+* Tic Lines */
+@media screen and (max-width: 1160px) {
+.tic-line.uno {
+    top: 15px;
+    left: 10px;
+}
+}
+
+@media screen and (max-width: 1160px) {
+.tic-line.dos {
+    bottom: 15px;
+    left: 10px;
+}
+}
+
+.tic-line {
+    position: absolute;
+    width: 30px;
+    height: 6px;
+    background: var(--white);
+    border-radius: 50px;
+}
+
+/**
+* Show Briefcase */
+@media screen and (max-width: 1159px) {
+.social-icons-show {
+  float: right;
+  color: var(--teal)!important;
+  margin: -30px 10px 0;
+}
