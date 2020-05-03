@@ -481,7 +481,7 @@ a:link .button__support {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 10;
   background: var(--light-gray);
   color: var(--dark-gray);
 }
