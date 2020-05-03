@@ -31,12 +31,14 @@ body{
     margin: 0 40px;
 }
 
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5,h6{
     line-height: 2;
     margin: 0;
+    display: block;
+    font-size: 2.25;
 }
 
-h1, h2{
+h2, h3{
     font-family: var(--font-condensed);
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -46,32 +48,33 @@ h1, h2{
     letter-spacing: .01;
 }
 
-h1 {
+h2 {
     line-height: .9em; 
     text-align: center;
     }
-h2 {
+h3 {
     font-size: 2.5rem;
     color: #fff;
     background-color: var(--black);
     padding: 10px 0; 
     text-align: center;
     }
-h3{
+h4{
     font-size: 2rem;
     color: #fff;
     font-family: var(--font-script);
     background-color: var(--teal);
     text-align: center;
   }
-h4{
-    font-family: var(--font-condensed);
-    font-weight: lighter;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    text-align: center;
-}
 h5{
+    font-family: var(--font-condensed);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    text-align: center;
+font-size: 18px;
+ }
+h6{
     font-size: 17px;
     color: #fff;
     font-family: var(--font-script);
@@ -149,9 +152,9 @@ img{
   position: relative;
 }
 
-.component img{
+/* .component img{
     max-width: initial;
-}
+} */
 
 .component__img {
   border: 1px solid #ccc;
@@ -303,11 +306,11 @@ a:link .button__support {
   color: var(--dark-gray);
   vertical-align: baseline;
 }
-/**
+/***************************************************
 * Ribbon
 */
 
-.wrapper {
+.ribbon__wrapper {
     position: relative;
     z-index: 1;
     width: 100%;
@@ -379,8 +382,87 @@ a:link .button__support {
 .icon--square:hover a {
   color: var(--teal)!important;
 }
+/***************************************************
+* Site Nav */
+
 
 /**
+* Nav List */
+
+ .navbar .nav__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+
+.navbar{
+  background: var(--black);
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  /* z-index: 9; */
+}
+.nav__wrapper{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+
+    max-width: 75rem;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+
+
+.nav-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  cursor: default;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.nav-list a{
+  display: inline-block;
+  text-decoration: none;
+  padding: .5rem;
+  font-family: var(--font-condensed);
+}
+
+
+/**
+* Header and Logo */
+.logo-icon a, .logo-text img {
+    display: block;
+}
+.site-header__logo a, .site-header__logo img {
+    display: block;
+}
+.site-header-logo a{ 
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+}
+
+.logo-icon{
+     float: left;
+    width: 50px;
+    height: 50px;
+    background: #72dfb8 !important;
+}
+
+.logo-text{
+    float: left;
+    padding: 18px 14px;
+    max-width: 220px;
+    display: flex;
+}
+
+
+/***************************************************
 * Section styling */
 
 .component-page .component__name {
