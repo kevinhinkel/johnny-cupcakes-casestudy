@@ -468,7 +468,7 @@ a:link .button__support {
 /**
 * Hero Section */
 .img-container{
-  background-image: url(/img/hero-image.png);
+  background-image: url(../img/hero-image.png);
   height: 80%;
   background-position: center;
   background-repeat: cover;
