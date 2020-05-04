@@ -483,7 +483,23 @@ a:link .button__support {
   padding: 100px 0;
 }
   
-
+/**
+* Badges Section */
+.badges-section{
+    padding: 50px 0 20px;
+    /* background-color: var(--teal); */
+}
+.badges-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: 1fr ;
+    grid-gap: 5px;
+    margin: 0 70px;
+}
+.badge {
+    color: #fff;
+    text-align: center;
+}
 
 
 /***************************************************
