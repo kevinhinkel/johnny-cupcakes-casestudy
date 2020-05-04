@@ -16,6 +16,8 @@ a, a:visited, a:hover, a:active {
 
 html {
   box-sizing: border-box;
+  margin: 0;
+  height: 100%;
 }
 *, 
 *:before, 
@@ -27,8 +29,7 @@ html {
 
 body{
     font-family: var(--font-sans-serif); 
-    width: 80%;
-    margin: 0 40px;
+    width: 100%;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -51,11 +52,11 @@ h2, h3{
 h2 {
     line-height: .9em; 
     text-align: center;
+    padding: 15px 0 25px;
     }
 h3 {
     font-size: 2.5rem;
     color: #fff;
-    background-color: var(--black);
     padding: 10px 0; 
     text-align: center;
     }
@@ -63,7 +64,6 @@ h4{
     font-size: 2rem;
     color: #fff;
     font-family: var(--font-script);
-    background-color: var(--teal);
     text-align: center;
   }
 h5{
@@ -72,13 +72,13 @@ h5{
     text-transform: uppercase;
     letter-spacing: .1em;
     text-align: center;
-font-size: 18px;
- }
+    font-size: 19px;
+    color: var(--black);
+  }
 h6{
     font-size: 17px;
     color: #fff;
     font-family: var(--font-script);
-    background-color: var(--black);
     text-align: center;
   }
 
@@ -156,7 +156,7 @@ img{
   background: #fff;
   margin: 0;
   padding: 0;
-  position: relative;
+  /* position: relative; */
 }
 
 /* .component img{
@@ -186,12 +186,12 @@ img{
     display: inline-block;
     border: 3px solid var(--teal);
     overflow: hidden;
-    width: 170px;
+    width: auto;
     height: 37px;
     border-radius: 25px;
     line-height: 0em;
     color: var(--teal);
-    padding: 18px 0;
+    padding: 18px 20px;
     margin: 10px 10px;
 }
 a:link .button__cta {
@@ -369,13 +369,13 @@ a:link .button__support {
   display: inline-block;
 }
 
-.social-icon, a {
-  color: var(--white)!important;
+.social-icon, .component__code{
+  color: var(--white);
   text-decoration: none;
   margin: 0 2px;
 }
 
-.social-icons:last-child{
+.social-icons:last-child i{
   color: var(--teal)!important;
   text-decoration: none;
 }
@@ -463,9 +463,29 @@ a:link .button__support {
 /* 
 .logo-icon a, .logo-text img {
     display: block;
-} 
+} */
 
-*/
+/**
+* Hero Section */
+.img-container{
+  background-image: url(/img/hero-image.png);
+  height: 80%;
+  background-position: center;
+  background-repeat: cover;
+  position: relative;
+}
+
+.inner-container{
+  text-align: center;
+  /* position: absolute; */
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+}
+  
+
+
+
 /***************************************************
 * Section styling */
 
@@ -504,7 +524,7 @@ a:link .button__support {
 
 /**
 * Hide Nav List */
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 900px) {
   .nav__wrapper {
     display: none!important;
   }
@@ -514,7 +534,7 @@ a:link .button__support {
 /**
 * Show Logo */
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 900px) {
   .logo-icon-show {
     margin: 0 auto;
     width: 50px;
@@ -526,14 +546,14 @@ a:link .button__support {
 
 /**
 * Tic Lines */
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 900px) {
 .tic-line.uno {
     top: 15px;
     left: 10px;
 }
 }
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 900px) {
 .tic-line.dos {
     bottom: 15px;
     left: 10px;
@@ -548,9 +568,15 @@ a:link .button__support {
     border-radius: 50px;
 }
 
+@media screen and (max-width: 900px) {
+h2 {
+   font-size: 4em;
+}
+}
+
 /**
 * Show Briefcase */
-@media screen and (max-width: 1159px) {
+@media screen and (max-width: 900px) {
 .social-icons-show {
   float: right;
   color: var(--teal)!important;
