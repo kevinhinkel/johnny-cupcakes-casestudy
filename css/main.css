@@ -146,9 +146,9 @@ img{
     line-height: 1;
     font-size: 16px;
     padding: 0.5rem;
+    z-index: 10;
     margin: 0;
     text-align: left;
-
 }
 
 .component__code {
@@ -156,7 +156,7 @@ img{
   background: #fff;
   margin: 0;
   padding: 0;
-  /* position: relative; */
+  position: relative;
 }
 
 /* .component img{
@@ -319,7 +319,6 @@ a:link .button__support {
 
 .ribbon__wrapper {
     position: relative;
-    z-index: 1;
     width: 100%;
 }
 
@@ -518,7 +517,7 @@ a:link .button__support {
 .component-page .component__name {
   position: sticky;
   top: 2rem;
-  z-index: 9;
+  z-index: 10;
 }
 
 .component__code:before,
@@ -531,7 +530,7 @@ a:link .button__support {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 10;
+  z-index: 9;
   background: var(--light-gray);
   color: var(--dark-gray);
 }
