@@ -486,7 +486,7 @@ a:link .button__support {
 /**
 * Badges Section */
 .badges-section{
-    padding: 50px 0 20px;
+    padding: 40px 0 25px;
     /* background-color: var(--teal); */
 }
 .badges-wrapper{
@@ -499,6 +499,16 @@ a:link .button__support {
 .badge {
     color: #fff;
     text-align: center;
+}
+
+/**
+* Fun Facts Section */
+.facts-section{
+  background-color: var(--teal);
+  padding: 50px;
+}
+.fun-facts__wrapper{
+    display: flex;
 }
 
 
@@ -589,8 +599,17 @@ h2 {
    font-size: 4em;
 }
 }
+/************************************
+* Ribbon Shrink */
 
-/**
+@media screen and (max-width: 900px) {
+h4 {
+   font-size: 1.75em;
+}
+}
+
+
+/*************************************
 * Show Briefcase */
 @media screen and (max-width: 900px) {
 .social-icons-show {
