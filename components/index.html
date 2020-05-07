@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Components | Johnny Cupcakes</title>
-<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,600,700|Open+Sans:300,400,400i,600,700|Pacifico&display=swap"
-    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,600,700|Open+Sans:300,400,400i,600,700|Pacifico&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="../web-fonts-with-css/css/all.min.css" />  
     <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
@@ -42,7 +41,7 @@
                 <h2 style="background-color: gray">World's First T-Shirt Bakery</h2>
                 <h3 style="background-color: black;">Story</h3>
                 <div class="ribbon__wrapper">
-                    <h4 style="background-color: #75e0b8;"><div class="ribbon">Fun Facts</div></h4>
+                    <div style="background-color: #75e0b8;"><h4 class="ribbon">Fun Facts</h4></div>
                 </div>
                 <h5>Featured In</h5>
                 <h6 style="background-color: black;">The</h6>
@@ -74,7 +73,7 @@
         
             <div class="component__code">
                 <div class="button__rewards">
-                    <a href="#!"><button><i class="fas fa-trophy"></i> Your Rewards!</button></a>
+                    <button><a href="#!"><i class="fas fa-trophy"></i> Your Rewards!</a></button>
                 </div>
             </div>
         </article>
@@ -87,7 +86,7 @@
         
             <div class="component__code">
                 <div class="button__support">
-                    <a href="#!"><button><i class="far fa-question-circle"></i> Support</button></a>
+                    <button><a href="#!"><i class="far fa-question-circle"></i> Support</a></button>
                 </div>
             </div>
         </article>
@@ -101,7 +100,7 @@
         
             <div class="component__code">
                 <div class="button__social">
-                    <a href="#!"><button><i class="fab fa-facebook-square"></i> Facebook</button></a>
+                    <button><a href="#!"><i class="fab fa-facebook-square"></i> Facebook</a></button>
                 </div>
             </div>
         </article>
@@ -129,7 +128,6 @@
                     <i class="fas fa-briefcase"></i>
                 </a>
             </div>
-        </div>
     </article>
    </section>
 
@@ -143,17 +141,13 @@
                 <img srcset="img/page-header@2x.png 2x" src="img/page__header.png" alt="page header" />
             </div>
 
-
             <div class="component__code">
                 <header class="navbar">
                     <div class="nav__wrapper">
-
                     
-                    <h1 class="site-header-logo large-left">
-                        <a href="/"> 
-                            <div class="logo-icon"><img src="img/page-header-logo.png" /></div>
-                            <div class="logo-text"><img src="img/page-header-wordmark.png" /></div>
-                        </a>
+                    <h1 class="site-header-logo large-left">                  
+                            <a href="/" class="logo-icon"><img  src="img/page-header-logo.png" alt="header logo" /></a>
+                            <a href="/" class="logo-text"><img  src="img/page-header-wordmark.png" alt="header wordmark" /></a>
                     </h1>
 
                     <nav>
@@ -165,21 +159,11 @@
                             <li><a href="#!">Events</a></li>
                             <li><a href="#!">Bakery</a></li>
                             <li><a href="#!">Custom Merch</a></li>
-                            <a href="#!" class="social-icons">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                            <a href="#!" class="social-icons">
-                                <i class="fab fa-twitter-square"></i>
-                            </a>
-                            <a href="#!" class="social-icons">
-                                <i class="fab fa-youtube-square"></i>
-                            </a>
-                            <a href="#!" class="social-icons">
-                                <i class="fas fa-envelope-square"></i>
-                            </a>
-                            <a href="#!" class="social-icons">
-                                <i class="fas fa-briefcase"></i>
-                            </a>
+                                <li> <a href="#!" class="social-icons"><i class="fab fa-facebook-square"></i></a></li>
+                                <li> <a href="#!" class="social-icons"><i class="fab fa-twitter-square"></i></a></li>
+                                <li> <a href="#!" class="social-icons"><i class="fab fa-youtube-square"></i></a></li>
+                                <li> <a href="#!" class="social-icons"><i class="fas fa-envelope-square"></i></a></li>
+                                <li> <a href="#!" class="social-icons"><i class="fas fa-briefcase"></i></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -187,8 +171,7 @@
                     <!--media query for navbar start  -->
                     <div class="large--hide medium--show">
                     
-                        <div class="logo-icon-show"><img src="img/page-header-logo.png" /></div>
-
+                        <div class="logo-icon-show"><img src="img/page-header-logo.png" alt="page header logo"/></div>
                         <div class="tic-line uno"></div>
                         <div class="tic-line dos"></div>
                         <a href="#!" class="social-icons-show">
@@ -197,8 +180,8 @@
                     </div>
             </header>
             </div><!-- .component-code-->
-      </article><!-- .component .component--is-done-->
-
+      </article><!-- .component .component-is-done-->
+    </section>
 <!-- banner section -->
     <section class="page-section">
         <h2 class="component__heading">Cover Section</h2>
@@ -256,49 +239,40 @@
 <!-- facts section -->
     <section class="page-section">
         <h2 class="component__heading">Facts Section</h2>
-        <wrapper class="component">
+        <article class="component">
             <h3 class="component__name">.facts-section</h3>
             <div class="component__img">
                 <img srcset="img/facts__section.png 1.1x" src="img/facts__section.png" alt="facts image" />
             </div>
     
-            <div class="component__code">
-                <div class="facts-section">
-                    
+            <section class="component__code">
+                <article class="facts-section">
                     <div class="ribbon__wrapper">
-                        <h4><div class="ribbon">Fun Facts</div></h4>
+                        <h4 class="ribbon">Fun Facts</h4>
                     </div>
-                    <article class="fun-facts__wrapper">
-                    <div class="facts-image">
-                        <div class="facts"><img srcset="img/fun-facts-1.png 1.1x" src="img/fun-facts-1.png" alt="facts image" /></div>
+                    <div class="fun-facts__wrapper">
+                            <div class="facts"><img srcset="img/fun-facts-1.png 1.1x" src="img/fun-facts-1.png" alt="facts image" /></div>
+                            <div class="facts"><img srcset="img/fun-facts-2.png 1.1x" src="img/fun-facts-2.png" alt="facts image" /></div>
+                            <div class="facts"><img srcset="img/fun-facts-3.png 1.1x" src="img/fun-facts-3.png" alt="facts image" /></div>
                     </div>
-                    <div class="facts-image">
-                        <div class="facts"><img srcset="img/fun-facts-2.png 1.1x" src="img/fun-facts-2.png" alt="facts image" /></div>
-                    </div>
-                    <div class="facts-image">
-                        <div class="facts"><img srcset="img/fun-facts-3.png 1.1x" src="img/fun-facts-3.png" alt="facts image" /></div>
-                    </div>
-                    </article>
 
-                </div><!-- .facts-section-->
-            </div><!-- .component-code-->
+                </article><!-- .facts-section-->
+            </section><!-- .component-code-->
     
-        </wrapper>
+        </article>
     </section>
 
 <!-- feature section -->
     <section class="page-section">
         <h2 class="component__heading">Feature Section</h2>
-        <wrapper class="component">
+        <article class="component">
             <h3 class="component__name">.feature-section</h3>
             <div class="component__img">
-                <img srcset="" src="" alt="image" />
             </div>
     
             <div class="component__code">
                 <div class="container">
                     <div class="container">
-                        <h6></h6>
     
     
     
@@ -307,11 +281,12 @@
                 </div>
             </div>
     
-        </wrapper>
+        </article>
     </section>
 
-</body>
+
 <script src="https://kit.fontawesome.com/3007713ba7.js" crossorigin="anonymous"></script>
+</body>
 </html>
 
 

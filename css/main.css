@@ -360,16 +360,16 @@ a:link .button__support {
 /**
 * .social-list__item
 */
-.social-icons {
+.social-icons{
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.25s;
   display: inline-block;
+  color: var(--white)!important;
 }
 
 .social-icon, .component__code{
-  color: var(--white);
   text-decoration: none;
   margin: 0 2px;
 }
@@ -456,7 +456,7 @@ a:link .button__support {
 .logo-text{
     float: left;
     padding: 18px 14px;
-    max-width: 220px;
+    width: 220px;
     display: flex;
 }
 /* 
