@@ -30,6 +30,7 @@ html {
 body{
     font-family: var(--font-sans-serif); 
     width: 100%;
+    color: var(--white);
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -51,12 +52,13 @@ h2, h3{
 
 h2 {
     line-height: .9em; 
+    color: var(--white);
     text-align: center;
     padding: 15px 0 25px;
     }
 h3 {
     font-size: 2.5rem;
-    color: #fff;
+    color: var(--white);
     padding: 10px 0; 
     text-align: center;
     }
@@ -467,7 +469,7 @@ a:link .button__support {
 /**
 * Hero Section */
 .img-container{
-  background-image: url(/img/hero-image.jpg);
+  background-image: url(../img/hero-image.jpg);
   height: 80%;
   background-position: center;
   background-repeat: cover;
