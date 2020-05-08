@@ -625,7 +625,7 @@ h4 {
 /*************************************
 * Feature Section */
 
-.spotlight{
+.feature{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "img content";
@@ -645,13 +645,13 @@ h4 {
   grid-area: content;
 }
 
-.spotlight-reverse{
+.feature-reverse{
   grid-template-areas: "content img";
 }
 
 
 @media (max-width: 40rem){
-   .spotlight{
+   .feature{
     display: block;
     }
     .spotlight__img{
