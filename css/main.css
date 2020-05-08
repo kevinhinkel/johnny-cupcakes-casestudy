@@ -363,28 +363,28 @@ a:link .button__support {
 /**
 * .social-list__item
 */
-.social-icons{
+
+
+.nav-list, .social-icons{
   display: flex;
-  align-items: center;
+  align-items: center;v
   justify-content: center;
   transition: all 0.25s;
   display: inline-block;
-  color: var(--white)!important;
+  color: var(--white);
 }
 
 .social-icon, .component__code{
   text-decoration: none;
   margin: 0 2px;
 }
-
 .social-icons:last-child i{
-  color: var(--teal)!important;
-  text-decoration: none;
+  color: var(--teal);
 }
 
 .social-icons:hover,
 .social-icons:hover a {
-  color: var(--teal)!important;
+  color: var(--teal);
 }
 /***************************************************
 * Site Nav */
@@ -552,7 +552,7 @@ a:link .button__support {
 
 /**
 * Hide Nav List */
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
   .nav__wrapper {
     display: none!important;
   }
@@ -562,7 +562,7 @@ a:link .button__support {
 /**
 * Show Logo */
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
   .logo-icon-show {
     margin: 0 auto;
     width: 50px;
@@ -574,14 +574,14 @@ a:link .button__support {
 
 /**
 * Tic Lines */
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
 .tic-line.uno {
     top: 15px;
     left: 10px;
 }
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
 .tic-line.dos {
     bottom: 15px;
     left: 10px;
@@ -596,7 +596,7 @@ a:link .button__support {
     border-radius: 50px;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
 h2 {
    font-size: 4em;
 }
@@ -604,7 +604,7 @@ h2 {
 /************************************
 * Ribbon Shrink */
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
 h4 {
    font-size: 1.75em;
 }
@@ -613,9 +613,48 @@ h4 {
 
 /*************************************
 * Show Briefcase */
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
 .social-icons-show {
   float: right;
   color: var(--teal)!important;
   margin: -30px 10px 0;
+}
+}
+
+
+/*************************************
+* Feature Section */
+
+.spotlight{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "img content";
+  background: black;
+  color: white;
+}
+
+.spotlight__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-area: img;
+}
+
+.spotlight__content{
+  padding: 2rem;
+  grid-area: content;
+}
+
+.spotlight-reverse{
+  grid-template-areas: "content img";
+}
+
+
+@media (max-width: 40rem){
+   .spotlight{
+    display: block;
+    }
+    .spotlight__img{
+    height: 10rem;
+  }
 }
