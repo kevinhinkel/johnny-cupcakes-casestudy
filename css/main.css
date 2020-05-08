@@ -613,6 +613,13 @@ h4 {
 
 /*************************************
 * Show Briefcase */
+@media (max-width: 900px) {
+.social-icons-show {
+  float: right;
+  color: var(--teal)!important;
+  margin: -30px 10px 0;
+}
+}
 
 
 /*************************************
