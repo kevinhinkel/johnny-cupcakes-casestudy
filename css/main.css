@@ -285,34 +285,38 @@ a:link .button__support {
 .button__support:hover button{
     cursor: pointer;
 }
-/**
-* Social Button 
+/****************************************************
+* Social Buttons 
 */
 .button__social button{
     font-family: var(--font-condensed);
     text-transform: uppercase; 
     font-weight: 600;
     font-size: 1.35em;
-    text-align: center;
-    display: block;
-    overflow: hidden;
-    width: 190px;
-    height: 60px;
+    width: 170px;
+    height: 50px;
     border-radius: 50px;
     line-height: 2em;
     color: var(--dark-gray);
-    padding: 0px 0;
-    margin: 10px 10px;
+    padding: 0;
+    margin: 10px 5px;
     background-color: var(--light-gray);
-    border: 2px solid #dbdbdb;
+    border: 1.5px solid #dbdbdb;
   }
-/* a:link .button__social {
-  text-decoration: none;
-  color: var(--light-gray);
+
+.social-section{
+  margin: 0 auto;
+    padding: 40px auto;
+    background-color: var(--light-gray);
+}
+
+.grid-wrapper{
   display: flex;
   align-items: center;
   justify-content: center;
-} */
+
+}
+
 .button__support:hover button{
     cursor: pointer;
 }
@@ -372,7 +376,7 @@ a:link .button__support {
 
 .nav-list, .social-icons{
   display: flex;
-  align-items: center;v
+  align-items: center;
   justify-content: center;
   transition: all 0.25s;
   display: inline-block;
@@ -692,3 +696,5 @@ h4 {
     padding: initial;
   }
 }
+
+
