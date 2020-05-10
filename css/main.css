@@ -254,7 +254,6 @@ button i{
   vertical-align: sub;
 }
 
-
 /**
 * Support Button 
 */
@@ -285,46 +284,60 @@ a:link .button__support {
 .button__support:hover button{
     cursor: pointer;
 }
+
 /****************************************************
 * Social Buttons 
 */
-.button__social button{
+.social-section{
+    background-color: var(--light-gray);
+    padding: 20px 0;
+}
+.grid-wrapper.social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button__social{
     font-family: var(--font-condensed);
     text-transform: uppercase; 
     font-weight: 600;
     font-size: 1.35em;
-    width: 170px;
-    height: 50px;
+    height: 55px;
     border-radius: 50px;
-    line-height: 2em;
+    line-height: 2.35em;
     color: var(--dark-gray);
-    padding: 0;
-    margin: 10px 5px;
+    padding: 0 20px;
     background-color: var(--light-gray);
     border: 1.5px solid #dbdbdb;
-  }
-
-.social-section{
-  margin: 0 auto;
-    padding: 40px auto;
-    background-color: var(--light-gray);
+    margin: 0 5px;
+    text-align: center;
 }
 
-.grid-wrapper{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.button__support:hover button{
+.button__social:hover {
+    background-color: var(--dark-gray);
+    color: var(--white);
     cursor: pointer;
 }
-
+/* styling for icons */
 .button__social i{
   color: var(--dark-gray);
   vertical-align: baseline;
 }
+
+.button__social:hover i{
+    color: var(--white);
+}
+
+@media (max-width: 800px) {
+.social__content {
+    display: none;
+}
+.button__social{
+  width: 6rem;
+}
+}
+
 /***************************************************
 * Ribbon
 */
@@ -517,6 +530,7 @@ a:link .button__support {
 }
 .fun-facts__wrapper{
     display: flex;
+    justify-content: center;
 }
 
 /**
@@ -530,7 +544,7 @@ a:link .button__support {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-template-rows: 1fr ;
     grid-gap: 5px;
-    margin: 0 70px;
+    margin: 0 90px;
 }
 
 .merch img{
@@ -545,6 +559,8 @@ a:link .button__support {
   color: black;
   text-align: center;
 }
+
+
 /***************************************************
 * Section styling */
 
