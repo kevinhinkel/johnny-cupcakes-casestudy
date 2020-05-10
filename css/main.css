@@ -162,9 +162,10 @@ img{
   position: relative;
 }
 
-/* .component img{
+/* resizing of component img so it shows slider*/
+.component__img img{
     max-width: initial;
-} */
+}
 
 .component__img {
   border: 1px solid #ccc;
@@ -491,7 +492,7 @@ a:link .button__support {
     padding: 40px 0 25px;
     /* background-color: var(--teal); */
 }
-.badges-wrapper{
+.grid-wrapper.badges{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-template-rows: 1fr ;
@@ -513,14 +514,39 @@ a:link .button__support {
     display: flex;
 }
 
+/**
+* Merchandise Section */
+.merch-section{
+    padding: 40px 65px 25px;
+    /* background-color: var(--teal); */
+}
+.grid-wrapper.merch{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: 1fr ;
+    grid-gap: 5px;
+    margin: 0 70px;
+}
 
+.merch img{
+    margin: 18px auto;
+    padding: 0 6px;
+    width: 10rem;
+}
+
+.merch p{
+  font-family: 'Bree Serif', serif;
+  font-size: .9em;
+  color: black;
+  text-align: center;
+}
 /***************************************************
 * Section styling */
 
 .component-page .component__name {
   position: sticky;
   top: 2rem;
-  z-index: 10;
+  z-index: 1;
 }
 
 .component__code:before,
@@ -548,7 +574,7 @@ a:link .button__support {
 
 /***************************************************
 * Media Queries */
-
+/***************************************************
 
 /**
 * Hide Nav List */
