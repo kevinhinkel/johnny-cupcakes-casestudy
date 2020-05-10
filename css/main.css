@@ -729,18 +729,19 @@ h4 {
 
 .footer-container{
   background-color: var(--black);
-  padding-top: 50px;
+  padding: 40px 0 0;
 }
 
-.footer__row {
-  padding-left: 5%;
-  padding-right: 1%;
-  display: flex;
-  align-items: flex-start;
+.footer-row__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 1fr ;
+    grid-gap: 5px;
+    margin: 0 90px;
 }
 
-.footer__column {
-  width: 25%;
+.footer-column{
+  padding-bottom: 100px!important;
 }
 
 .footer__column h6{
@@ -755,14 +756,8 @@ h4 {
   color: var(--dark-gray);
   padding: 0;
 }
-  /* Clear floats after the columns */
-.footer__row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-.footer-item img{
- bottom: 0rem; 
- right: 0rem;
+.big-kid{
+  bottom: 0rem; 
+  right: 20rem;
 }
