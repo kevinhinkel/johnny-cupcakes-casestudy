@@ -725,3 +725,44 @@ h4 {
 }
 
 
+/*-------------------------------------------- footer styles */
+
+.footer-container{
+  background-color: var(--black);
+  padding-top: 50px;
+}
+
+.footer__row {
+  padding-left: 5%;
+  padding-right: 1%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer__column {
+  width: 25%;
+}
+
+.footer__column h6{
+  text-align: left;
+}
+
+.footer__column ul{
+  list-style: none;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1em;
+  color: var(--dark-gray);
+  padding: 0;
+}
+  /* Clear floats after the columns */
+.footer__row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer-item img{
+ bottom: 0rem; 
+ right: 0rem;
+}
