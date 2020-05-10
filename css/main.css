@@ -286,11 +286,22 @@ a:link .button__support {
 }
 
 /****************************************************
-* Social Buttons 
+* Social Section
 */
+
+/* Social Bug */
+.social__bug{
+  display: flex;
+  justify-content: center;
+  margin-bottom: -35px;
+  z-index: 10;
+}
+
+/* Social Buttons */
 .social-section{
     background-color: var(--light-gray);
-    padding: 20px 0;
+    padding: 28px 0;
+    border-top: 6px solid var(--dark-gray);
 }
 .grid-wrapper.social{
   display: flex;
