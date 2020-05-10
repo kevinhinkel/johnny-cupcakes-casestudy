@@ -684,11 +684,14 @@ h4 {
    line-height: 1.75rem;
  }
 
-@media (max-width: 40rem){
+@media (max-width: 900px){
    .feature{
     display: block;
     }
     .spotlight__img{
-    height: 10rem;
+    height: 15rem;
+  }
+.spotlight__content{
+    padding: initial;
   }
 }
