@@ -503,7 +503,7 @@ a:link .button__support {
     display: block;
 } */
 
-/**
+/*************************************************
 * Hero Section */
 .img-container{
   background-image: url("../img/hero-image.jpg");
@@ -520,8 +520,13 @@ a:link .button__support {
   height: auto;
   padding: 80px 0;
 }
-  
-/**
+
+.inner-container h6{
+  font-size: 1.5rem;
+}
+
+
+/*************************************************
 * Badges Section */
 .badges-section{
     padding: 40px 0 25px;
