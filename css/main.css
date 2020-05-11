@@ -550,7 +550,7 @@ a:link .button__support {
     justify-content: center;
 }
 
-/**
+/************************************
 * Merchandise Section */
 .merch-section{
     padding: 40px 65px 25px;
@@ -567,7 +567,7 @@ a:link .button__support {
 .merch img{
     margin: 18px auto;
     padding: 0 6px;
-    width: 10rem;
+    width: 13rem;
 }
 
 .merch p{
@@ -575,6 +575,130 @@ a:link .button__support {
   font-size: .9em;
   color: black;
   text-align: center;
+}
+
+
+/************************************
+* Ribbon Shrink */
+
+@media (max-width: 900px) {
+h4 {
+   font-size: 1.75em;
+}
+}
+
+/*************************************
+* Show Briefcase */
+@media (max-width: 900px) {
+.social-icons-show {
+  float: right;
+  color: var(--teal)!important;
+  margin: -30px 10px 0;
+}
+}
+
+/*************************************
+* Feature Section */
+
+.feature{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "img content";
+  background: black;
+  color: white;
+}
+
+.spotlight__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-area: img;
+}
+
+.spotlight__content{
+  grid-area: content;
+}
+
+.feature-reverse{
+  grid-template-areas: "content img";
+}
+ .feature p{
+   text-align: center;
+   margin: 30px auto;
+   padding: 0 60px;
+   line-height: 1.75rem;
+ }
+
+@media (max-width: 900px){
+   .feature{
+    display: block;
+    }
+    .spotlight__img{
+    height: 15rem;
+  }
+.spotlight__content{
+    padding: initial;
+  }
+}
+
+
+/*-------------------------------------------- footer styles */
+
+.footer-container{
+  background-color: var(--black);
+  padding: 50px 0 0;
+}
+
+.footer-row__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 1fr ;
+    margin: 0px 15%;
+    width: 70%;
+}
+
+.footer-column{
+  padding-bottom: 100px!important;
+}
+
+.footer__column h6{
+  text-align: left;
+}
+
+.footer__column ul{
+  list-style: none;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1em;
+  color: var(--dark-gray);
+  padding: 0;
+}
+
+.footer-item img{
+   display: block;
+  max-width: 140%;
+}
+
+@media (max-width: 1000px){
+.footer-item img{
+    max-width: 210px;
+    padding-top: 40px;
+    }
+  }
+
+/*-------------------------------------------- fixed button styles */
+.fixed__buttons .button__rewards{
+  position: fixed;
+  z-index: 20;
+  bottom: 0;
+  margin: 0 0 20px 20px;
+}
+.fixed__buttons .button__support{
+  position: fixed;
+  z-index: 20;
+  bottom: 0;
+  right: 0;
+  margin: 0 20px 20px 0;
 }
 
 
@@ -664,121 +788,4 @@ a:link .button__support {
 h2 {
    font-size: 4em;
 }
-}
-/************************************
-* Ribbon Shrink */
-
-@media (max-width: 900px) {
-h4 {
-   font-size: 1.75em;
-}
-}
-
-
-/*************************************
-* Show Briefcase */
-@media (max-width: 900px) {
-.social-icons-show {
-  float: right;
-  color: var(--teal)!important;
-  margin: -30px 10px 0;
-}
-}
-
-
-/*************************************
-* Feature Section */
-
-.feature{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "img content";
-  background: black;
-  color: white;
-}
-
-.spotlight__img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  grid-area: img;
-}
-
-.spotlight__content{
-  grid-area: content;
-}
-
-.feature-reverse{
-  grid-template-areas: "content img";
-}
- .feature p{
-   text-align: center;
-   margin: 30px auto;
-   padding: 0 60px;
-   line-height: 1.75rem;
- }
-
-@media (max-width: 900px){
-   .feature{
-    display: block;
-    }
-    .spotlight__img{
-    height: 15rem;
-  }
-.spotlight__content{
-    padding: initial;
-  }
-}
-
-
-/*-------------------------------------------- footer styles */
-
-.footer-container{
-  background-color: var(--black);
-  padding: 50px 0 0;
-}
-
-.footer-row__wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: 1fr ;
-    margin: 0px 15%;
-    width: 70%;
-}
-
-.footer-column{
-  padding-bottom: 100px!important;
-}
-
-.footer__column h6{
-  text-align: left;
-}
-
-.footer__column ul{
-  list-style: none;
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 1em;
-  color: var(--dark-gray);
-  padding: 0;
-}
-
-.footer-item img{
-   display: block;
-  max-width: 200%;
-}
-
-/*-------------------------------------------- fixed button styles */
-.fixed__buttons .button__rewards{
-  position: fixed;
-  z-index: 20;
-  bottom: 0;
-  margin: 0 0 20px 20px;
-}
-.fixed__buttons .button__support{
-  position: fixed;
-  z-index: 20;
-  bottom: 0;
-  right: 0;
-  margin: 0 20px 20px 0;
 }
