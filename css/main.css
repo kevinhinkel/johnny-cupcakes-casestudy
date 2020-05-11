@@ -188,18 +188,18 @@ img{
 .button__cta{
     font-family: var(--font-sans-serif);
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     text-transform: uppercase;
     display: inline-block;
     border: 3px solid var(--teal);
     overflow: hidden;
     width: auto;
-    height: 37px;
+    height: 50px;
     border-radius: 25px;
-    line-height: 0em;
+    line-height: .5em;
     color: var(--teal);
-    padding: 18px 20px;
+    padding: 18px 25px;
     margin: 10px 10px;
 }
 a:link .button__cta {
@@ -231,7 +231,7 @@ a:link .button__cta {
     color: var(--white);
     padding: 0px 0;
     margin: 10px 10px;
-    background-color: var(--teal);
+    background-color: #8FDDBA;
     border: none;
   }
 a:link .button__rewards {
@@ -271,7 +271,7 @@ button i{
     color: var(--black);
     padding: 0px 0;
     margin: 10px 10px;
-    background-color: var(--teal);
+    background-color: #8FDDBA;
     border: none;
   }
 a:link .button__support {
@@ -735,7 +735,7 @@ h4 {
 
 .footer-container{
   background-color: var(--black);
-  padding: 40px 0 0;
+  padding: 50px 0 100px;
 }
 
 .footer-row__wrapper {
@@ -763,9 +763,11 @@ h4 {
   padding: 0;
 }
 
-.big-kid{
+img .big-kid{
   bottom: 0rem; 
   right: 20rem;
+  display: block;
+  max-width: 200%;
 }
 
 /*-------------------------------------------- fixed button styles */
