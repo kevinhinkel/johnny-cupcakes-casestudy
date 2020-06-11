@@ -126,10 +126,11 @@ img{
     text-align: left;
 }
 
-.component__heading{
+.component-page__section-heading{
     font-family: var(--font-sans-serif);
     font-weight: 400;
     font-size: 1rem;
+    text-transform: uppercase;
     background-color: rgb(65, 65, 65);
     color: var(--white);
     line-height: 1;
@@ -138,7 +139,7 @@ img{
     margin: 0;
     position: sticky;
     margin-bottom: 0;
-    top: 0rem;
+    top: 4.5rem;
     z-index: 11;
     margin-top: 50px;
     text-align: left;
@@ -415,7 +416,6 @@ a:link .button__support {
 
 .social-icon, .component__code{
   text-decoration: none;
-  margin: 0 2px;
 }
 .social-icons:last-child i{
   color: var(--teal);
@@ -708,7 +708,7 @@ h4 {
 
 
 /***************************************************
-* Section styling */
+* TEMPLATES */
 
 .component-page .component__name {
   position: sticky;
@@ -735,13 +735,39 @@ h4 {
   content: "IMG";
 }
 
+.sidebar-nav {
+  background: #bada55;
+}
+.sidebar-nav__section {
+  margin-top: 2.5rem;
+}
+.sidebar-nav__heading {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.sidebar-nav__heading a {
+  text-decoration: none;
+  color: var(--black);
+}
+.sidebar-nav__list {
+  list-style: none;
+  padding: 0;
+}
+.sidebar-nav__list a {
+  text-decoration: none;
+}
+
 .component-page {
   display: block;
 }
 
+header{
+  background-color: palevioletred;
+}
 /***************************************************
 * Media Queries */
-/***************************************************
+/**
 
 /**
 * Hide Nav List */
@@ -793,4 +819,79 @@ h4 {
 h2 {
    font-size: 4em;
 }
+}
+
+/***************************************************
+* Sidebar On Components Page */
+
+.wordmark {
+  margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.component-page__header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #bada55;
+  z-index: 100;
+}
+.component-page__header-container {
+  position: static;
+  padding: .75rem 2rem;
+}
+.component-page__nav {
+  display: none;
+}
+
+.component-page .component__name {
+  position: sticky;
+  top: 6.5rem;
+  z-index: 9;
+}
+
+@media (min-width: 45rem) {
+  .component-page {
+    display: grid;
+    /* why minmax(0, 1fr)?
+			 See: https://css-tricks.com/preventing-a-grid-blowout/ */
+    grid-template-columns: 18rem minmax(0, 1fr);
+    grid-template-areas: "header main";
+    padding-top: 0;
+  }
+  .component-page__header {
+    position: relative;
+    padding: 1rem;
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 18rem;
+  }
+  .component-page__header-container {
+    padding: 1rem;
+  }
+
+  .component-page__nav {
+    display: block;
+    grid-area: nav;
+    margin-top: 1.33rem;
+  }
+  .component-page__main {
+    grid-area: main;
+    padding: 2rem;
+  }
+  .component-page__section-heading {
+    top: 0;
+  }
+  .component-page .component__name {
+    top: 2rem;
+  }
 }
