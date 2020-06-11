@@ -349,12 +349,30 @@ a:link .button__support {
 
 @media (max-width: 800px) {
 .social__content {
-    display: none;
+  display: none;
 }
 .button__social{
   width: 6rem;
 }
 }
+
+/* styling of social section for component page */
+
+
+@media (max-width: 1200px) {
+.component__code .social__content {
+  display: none;
+}
+.component__code .button__social{
+  width: 6rem;
+}
+}
+@media (max-width: 1500px) {
+.component__code .button__social{
+    padding: 0 20px;
+}
+}
+
 
 /***************************************************
 * Ribbon
@@ -820,6 +838,8 @@ h2 {
    font-size: 4em;
 }
 }
+
+
 
 /***************************************************
 * Sidebar On Components Page */
