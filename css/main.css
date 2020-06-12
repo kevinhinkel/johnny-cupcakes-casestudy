@@ -9,6 +9,7 @@
     --mid-gray: #bbbbbb;
     --dark-gray: #aeaeae;
 }
+
 a, a:visited, a:hover, a:active {
   color: inherit;
   text-decoration: none!important;
@@ -122,7 +123,7 @@ img{
     color: #000;
     line-height: 1;
     font-size: 45px;
-    margin: 30px 0;
+    margin: 10px 0;
     text-align: left;
 }
 
@@ -753,9 +754,6 @@ h4 {
   content: "IMG";
 }
 
-.sidebar-nav {
-  background: #bada55;
-}
 .sidebar-nav__section {
   margin-top: 2.5rem;
 }
@@ -779,10 +777,17 @@ h4 {
 .component-page {
   display: block;
 }
-
-header{
-  background-color: palevioletred;
+.sidebar-nav__list a{
+color: #666666;
+line-height: 1.3rem;
+font-size: 1.3rem;
+font-family: monospace;
 }
+
+
+/* header{
+  background-color: palevioletred;
+} */
 /***************************************************
 * Media Queries */
 /**
@@ -859,7 +864,7 @@ h2 {
   position: fixed;
   width: 100%;
   top: 0;
-  background: #bada55;
+  background: #efefef;
   z-index: 100;
 }
 .component-page__header-container {
