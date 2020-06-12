@@ -362,24 +362,6 @@ a:link .button__support {
 }
 }
 
-/* styling of social section for component page */
-
-
-@media (max-width: 1200px) {
-.component__code .social__content {
-  display: none;
-}
-.component__code .button__social{
-  width: 6rem;
-}
-}
-@media (max-width: 1500px) {
-.component__code .button__social{
-    padding: 0 20px;
-}
-}
-
-
 /***************************************************
 * Ribbon
 */
@@ -453,9 +435,6 @@ a:link .button__support {
 * Site Nav */
 
 
-/**
-* Nav List */
-
  .navbar .nav__wrapper{
   display: flex;
   align-items: center;
@@ -496,7 +475,8 @@ a:link .button__support {
 }
 
 
-/**
+/*****************************************************
+
 * Header and Logo */
 
 .site-header__logo a, .site-header__logo img {
@@ -790,9 +770,6 @@ font-family: monospace;
 }
 
 
-/* header{
-  background-color: palevioletred;
-} */
 /***************************************************
 * Media Queries */
 /**
@@ -804,7 +781,6 @@ font-family: monospace;
     display: none!important;
   }
 }
-
 
 /**
 * Show Logo */
@@ -819,8 +795,7 @@ font-family: monospace;
 }
 
 
-/**
-* Tic Lines */
+/* Tic Lines */
 @media (max-width: 900px) {
 .tic-line.uno {
     top: 15px;
@@ -925,3 +900,65 @@ h2 {
     top: 2rem;
   }
 }
+
+
+
+
+/* media queries for Nav section component page */
+
+
+@media (max-width: 1200px) {
+.component__code .social__content {
+  display: none;
+}
+.component__code .button__social{
+  width: 6rem;
+}
+}
+@media (max-width: 1500px) {
+.component__code .button__social{
+    padding: 0 20px;
+}
+}
+
+
+@media (max-width: 1250px) {
+.component__code .nav__wrapper {
+    display: none!important;
+  }
+}
+
+/* Show Logo */
+
+@media (max-width: 1250px) {
+.component__code .logo-icon-show {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background: #72dfb8 !important;
+  }
+}
+
+@media (max-width: 1250px) {
+.component__code .tic-line.uno {
+    top: 15px;
+    left: 10px;
+}
+}
+
+@media (max-width: 1250px) {
+.component__code .tic-line.dos {
+    bottom: 15px;
+    left: 10px;
+}
+}
+
+/* Show Briefcase  */
+@media (max-width: 1250px) {
+.component__code .social-icons-show {
+  float: right;
+  color: var(--teal)!important;
+  margin: -30px 10px 0;
+}
+}
+
