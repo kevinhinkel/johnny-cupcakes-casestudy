@@ -145,7 +145,7 @@ img{
     margin: 0;
     position: sticky;
     margin-bottom: 0;
-    top: 4.5rem;
+    top: 3rem;
     z-index: 11;
     margin-top: 50px;
     text-align: left;
@@ -849,7 +849,7 @@ h2 {
 }
 .component-page__header-container {
   position: static;
-  padding: 1.5rem 2rem;
+  padding: .75rem 2rem;
 }
 .component-page__nav {
   display: none;
@@ -857,7 +857,7 @@ h2 {
 
 .component-page .component__name {
   position: sticky;
-  top: 6.5rem;
+  top: 5rem;
   z-index: 9;
 }
 
