@@ -472,7 +472,7 @@ a:link .button__support {
 .nav__wrapper{
     position: relative;
     width: 100%;
-    max-width: 75rem;
+    max-width: 110rem;
     margin: auto;
     padding: 0 1.5rem;
 }
