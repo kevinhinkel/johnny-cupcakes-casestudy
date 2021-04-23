@@ -135,7 +135,7 @@ img{
 .component-page__section-heading{
     font-family: var(--font-sans-serif);
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
     background-color: rgb(65, 65, 65);
     color: var(--white);
